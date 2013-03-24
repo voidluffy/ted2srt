@@ -6,7 +6,7 @@ https://github.com/yasondinalt/ted2srt
 
 Translate TED's Transcript into srt file.
 
-Takes TED's transcript filename as argument (xml extension required).
+Takes TED's transcript filename as argument (.json extension required).
 
 NB: to get transcript, use this URL:
 http://www.ted.com/talks/subtitles/id/VIDEO_ID/lang/en
