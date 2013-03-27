@@ -35,7 +35,7 @@ def parseLine(text):
         return None
 
 def formatSrtTime(secTime):
-    """Convert a time in seconds (google's transcript) to srt time format."""
+    """Convert a time in seconds (TED's transcript) to srt time format."""
     sec = int(secTime)/1000+16
     micro = 0
     m, s = divmod(int(sec), 60)
@@ -57,7 +57,7 @@ def printSrtLine(i, elms):
 fileName = sys.argv[1]
 
 def main(fileName):
-    """Parse google's transcript and write the converted data in srt format."""
+    """Parse TED's transcript and write the converted data in srt format."""
     with open(sys.argv[1], 'r') as infile:
         buf = []
         for line in infile:
