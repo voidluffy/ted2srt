@@ -17,7 +17,7 @@ http://www.ted.com/talks/subtitles/id/VIDEO_ID/lang/en
 00:00:3,000 --> 00:00:5,000
 And I'm happy most of the time"""
 
-# Google's transcript example (first tags)
+# TED's transcript example (first tags)
 """{"duration":2000,"content":"And I'm happy most of the time,","startOfParagraph":false,"startTime":3000}"""
 
 import re, sys
