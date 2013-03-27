@@ -23,11 +23,11 @@ And I'm happy most of the time"""
 import re, sys
 
 # Pattern to identify a subtitle and grab start, duration and text.
-pat = re.compile(r'.*?\"duration\"\:([\.\d]+?),\"content\"\:\"(.*?)\".*?\"startTime\":([\.\d]*)', re.DOTALL|re.U|re.I|re.S)
-
 
 def parseLine(text):
     """Parse a subtitle."""
+    text = text.replace('\\"','&amp;quot;')
+    pat = re.compile(r'.*?\"duration\"\:([\.\d]+?),\"content\"\:\"(.*?)\".*?\"startTime\":([\.\d]*)', re.DOTALL|re.U|re.I|re.S)
     m = re.match(pat, text)
     if m:
         return (m.group(3), m.group(1), m.group(2))
